@@ -1,11 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import ListGroups from "./components/ListGroups";
 
 function App() {
-  return <div>
-    <ListGroups />
-  </div>;
+  let items = ["London", "Tokyo", "Dakar"];
+  return (
+    <div>
+      <ListGroups items={items} heading="Cities" />
+    </div>
+  );
 }
 
-export default App
+export default App;
