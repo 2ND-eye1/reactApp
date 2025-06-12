@@ -1,10 +1,12 @@
-import ListGroups from "./components/ListGroups";
+// we want to notify when smtg chagnes in the listgroup componenet
+import { Buttons } from "./components/Buttons";
 
 function App() {
-  let items = ["London", "Tokyo", "Dakar"];
   return (
     <div>
-      <ListGroups items={items} heading="Cities" />
+      <Buttons onClick={() => console.log("Clicked!")} color="dark">
+        Proceed!!
+      </Buttons>
     </div>
   );
 }

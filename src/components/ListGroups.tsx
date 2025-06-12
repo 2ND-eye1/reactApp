@@ -3,9 +3,11 @@ import { useState } from "react";
 interface Props {
   items: string[];
   heading: string;
+  // functionName: (varName: dataType) = > returnType;
+  onSelectItem: (item: string) => void;
 }
 // import { MouseEvent } from "react";
-function ListGroups({ items, heading }: Props) {
+function ListGroups({ items, heading, onSelectItem }: Props) {
   // this is local so it cannot be modified outside of the component
   // this means no item is selected.
   //Hook
@@ -34,6 +36,7 @@ function ListGroups({ items, heading }: Props) {
             key={item}
             onClick={() => {
               setSelectedIndex(index);
+              onSelectItem(item);
             }}
           >
             {item}
