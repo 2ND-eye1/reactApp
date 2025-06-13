@@ -72,7 +72,7 @@ export const NavBar = () => {
               placeholder="Search your anime"
               aria-label="Search"
             />
-            <button className="btn btn-light" type="submit">
+            <button className="btn btn-dark" type="submit">
               Search
             </button>
           </form>
