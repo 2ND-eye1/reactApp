@@ -9,7 +9,7 @@ export const NavBar = () => {
           AniWatch
         </a>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler btn-primary"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navBarContent"
