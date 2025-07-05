@@ -62,3 +62,6 @@ function Body() {
 }
 
 export default Body;
+
+// what need sto be done:
+// i will need to be able to use flex wrap properly so that the image can be displayed in a grid and not in a column
