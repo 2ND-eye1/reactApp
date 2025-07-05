@@ -1,3 +1,5 @@
+import style from "./NavBar.module.css";
+
 export const NavBar = () => {
   return (
     <>
@@ -6,7 +8,7 @@ export const NavBar = () => {
         data-bs-theme="dark"
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className={"navbar-brand ${style.navText}"} href="#">
             AniWatch
           </a>
           <button

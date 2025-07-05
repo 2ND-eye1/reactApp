@@ -1,0 +1,24 @@
+.Body {
+    margin: 10rem;
+    padding: 2rem;
+}
+
+
+.pictures img {
+    flex-wrap: wrap;
+    height: 22rem;
+    width: auto;
+    cursor: pointer;
+    /* padding: 1rem; */
+    cursor: pointer;
+    margin: 1rem;
+
+}
+
+
+.imgCard p {
+    padding-left: 4rem;
+    align-items: stretch;
+    position: relative;
+    font-size: small;
+}
