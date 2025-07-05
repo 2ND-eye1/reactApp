@@ -8,35 +8,33 @@ function StarRating() {
   const [rating, setRating] = useState(0);
 
   return (
-    <>
-      <div className="rating">
-        {/* this creates an empty array of 5 star elements */}
-        {/* {[...Array(5)]} */}
-        {[...Array(5)].map((star, i) => {
-          const ratingValue = i + 1;
+    <div className="rating">
+      {/* this creates an empty array of 5 star elements */}
+      {/* {[...Array(5)]} */}
+      {[...Array(5)].map((star, i) => {
+        const ratingValue = i + 1;
 
-          return (
-            <>
-              <label className={style.hearts}>
-                <input
-                  type="radio"
-                  name="rating"
-                  value={ratingValue}
-                  onClick={() => setRating(ratingValue)}
-                />
-                {/* // in order to add
+        return (
+          <>
+            <label key={ratingValue} className={style.hearts}>
+              <input
+                type="radio"
+                name="rating"
+                value={ratingValue}
+                onClick={() => setRating(ratingValue)}
+              />
+              {/* // in order to add
             something to each button we need to add a label to wrap the smtg
             with the input radio */}
-                <FaHeart
-                  size={20}
-                  color={ratingValue <= rating ? "red" : "gray"}
-                />
-              </label>
-            </>
-          );
-        })}
-      </div>
-    </>
+              <FaHeart
+                size={20}
+                color={ratingValue <= rating ? "red" : "gray"}
+              />
+            </label>
+          </>
+        );
+      })}
+    </div>
   );
 }
 
