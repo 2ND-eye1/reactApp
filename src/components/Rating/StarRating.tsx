@@ -27,12 +27,14 @@ function StarRating() {
             {/* // in order to add
             something to each button we need to add a label to wrap the smtg
             with the input radio */}
-            <FaHeart
-              size={20}
-              color={ratingValue <= (hover || rating) ? "red" : "#e4e5e9"}
-              onMouseEnter={() => setHover(ratingValue)}
-              onMouseLeave={() => setHover(0)}
-            />
+            {
+              <FaHeart
+                size={20}
+                color={ratingValue <= (hover || rating) ? "red" : "#e4e5e9"}
+                onMouseEnter={() => setHover(ratingValue)}
+                onMouseLeave={() => setHover(0)}
+              />
+            }
           </label>
         );
       })}
