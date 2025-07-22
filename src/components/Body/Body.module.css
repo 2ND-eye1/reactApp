@@ -1,12 +1,11 @@
-.Body {
+#mainBody  {
     margin: 10rem;
-    padding: 2rem;
+    padding: 20rem;
 }
 
 
-.pictures img {
-    flex-wrap: wrap;
-    height: 22rem;
+.images {
+    height: 30rem;
     width: auto;
     cursor: pointer;
     /* padding: 1rem; */
@@ -21,5 +20,4 @@
     align-items: stretch;
     position: relative;
     font-size: small;
-    
 }

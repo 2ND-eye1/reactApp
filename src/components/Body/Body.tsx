@@ -1,4 +1,5 @@
 import StarRating from "../Rating/StarRating";
+import Review from "../Review/Review";
 import heroX from "./images/toBeHeroX.jpg";
 import rage from "./images/ROB1.webp";
 import titan from "./images/AOT1.jpeg";
@@ -7,57 +8,57 @@ import gojo from "./images/JJK1.jpg";
 import style from "./Body.module.css";
 
 function Body() {
+  function showComment() {
+    return <Review name="To Be Hero X" />;
+  }
+
   return (
-    <>
-      <div className={style.pictures}>
-        <img src={heroX} alt="To Be Hero X" title="To Be Hero X" />
-        <div className={style.imgCard}>
-          <p>
-            To Be Hero <em>X</em>
-          </p>
+    <div className="container text-center" id="mainBody">
+      <div className="row">
+        <div className="col">
+          <img
+            className={style.images}
+            src={heroX}
+            title="To Be Hero X"
+            onClick={() => showComment()}
+          />
+          <p>To Be Hero X</p>
           <StarRating />
         </div>
-        <img src={titan} alt="Attack on Titan S1" title="Attack on Titan S1" />
-        <div className={style.imgCard}>
-          <p>
-            Attack on Titan <em>S1</em>
-          </p>
+        <div className="col">
+          <img
+            className={style.images}
+            src={rage}
+            title="The Rage of Bahamut S1"
+          />
+          <p>The Rage of Bahamut S1</p>
           <StarRating />
         </div>
-
-        <img
-          src={rage}
-          alt="The Rage of Bahamut S1"
-          title="The Rage of Bahamut S1"
-        />
-        <div className={style.imgCard}>
-          <p>
-            The Rage of Bahamut <em>S1</em>
-          </p>
+        <div className="col">
+          <img
+            className={style.images}
+            src={titan}
+            title="Attack on Titan S1"
+          />
+          <p>Attack on Titan S1</p>
           <StarRating />
         </div>
-
-        <img
-          src={demon}
-          alt="Kimetsu no Yaiba S1"
-          title="Kimetsu no Yaiba S1"
-        />
-        <div className={style.imgCard}>
-          <p>
-            Kimetsu no Yaiba <em>S1</em>
-          </p>
+        <div className="col">
+          <img
+            className={style.images}
+            src={demon}
+            title="Kimetsu no Yaiba S1"
+          />
+          <p>Kimetsu no Yaiba S1</p>
           <StarRating />
         </div>
-
-        <img src={gojo} alt="Jujutsu Kaisen S1" title="Jujutsu Kaisen S1" />
-        <div className={style.imgCard}>
-          <p>
-            Jujutsu Kaisen <em>S1</em>
-          </p>
+        <div className="col">
+          <img className={style.images} src={gojo} title="Jujutsu Kaisen S1" />
+          <p>Jujutsu Kaisen S1</p>
           <StarRating />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
